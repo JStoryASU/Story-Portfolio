@@ -55,12 +55,15 @@ main{
     padding: 1rem;
     text-align: center;
 }
-#about, #resume, #mywork{
-    color: #FFFFFF;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-left: 4px solid #FFC627;
+a{
+    color: #FFC627;
 }
+.card-row section{
+        flex: 1;
+        padding: 1rem;
+        border-radius: 5px;
+        border:#FFC627 2px solid;
+    }
 footer{
     background-color: #FFC627;
     color: #8C1D40;
@@ -82,4 +85,6 @@ footer{
         display: flex;
         gap: 1rem;
     }
+    
+    
 }
