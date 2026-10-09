@@ -1,13 +1,78 @@
 /* CSS by Justin Story */
 /* Color Palette: 
-Black= #1A1A1D
-Grey= #4E4E50
-Crimson= #6F2232
-Dark Red= #950740
-Bright Red= #C3073F
+ASU Maroon: #8C1D40
+ASU GOLD: #FFC627
+ASU WHITE: #FFFFFF
+ASU BLACK: #000000
 */
 
 /* GLOBAL (base) MOBILE FIRST */
 body {
-    background-color: #6F2232;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #8C1D40;
+    color: #FFFFFF;
+    min-width:500px;
+    display: grid;
+    grid-template-columns: 1fr;   
+}
+header{
+    background-color: #FFC627;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+header h1{
+    margin: 0;
+    color: #8C1D40;
+}
+header p {
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #8C1D40;
+}
+nav{
+    background-color: #FFFFFF;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    display: block;
+    padding: 1rem;
+    color: #C3073F;
+    text-decoration: none;
+    border-right: 3px solid #950740;
+    margin: .25rem;
+}
+nav a:hover{
+    background-color: #C3073F;
+    color: #FFFFFF;
+}
+main{
+    padding: 1rem;
+}
+footer{
+    background-color: #FFC627;
+    color: #8C1D40;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+/*===== Media Query (Medium) =====*/
+@media (min-width: 800px) {
+    header, nav, footer {
+        grid-column: 1 / -1;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        gap:.25rem;
+    }
+    .card-row{
+        display: flex;
+        gap: 1rem;
+    }
 }
