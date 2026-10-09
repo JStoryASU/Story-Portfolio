@@ -56,7 +56,6 @@ main{
     text-align: center;
 }
 #about, #resume, #mywork{
-    background-color: #C3073F;
     color: #FFFFFF;
     padding: 1rem;
     margin-bottom: 1rem;
